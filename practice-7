@@ -1,0 +1,36 @@
+What does the following algorithm do? What is its runtime complexity? Explain your answer
+
+function compute(num) {
+    let result = []; 
+    for (let i = 1; i <= num; i++) {
+
+        if (i === 1) {
+            result.push(0);
+        }
+        else if (i === 2) {
+            result.push(1);
+        }
+        else {
+            result.push(result[i - 2] + result[i - 3]);
+        }
+    }
+    return result;
+}
+
+Function creates an array containing the first n numbers in the Fibonacci sequence. 
+
+4 = O(1)
+5 = O(n)
+    7 = O(1) -> checks i value
+    10 = O(1) -> checks i value
+    13 = O(1) -> checks i value
+    8 + 11 + 14 = O(1) -> one of these is performed once 
+17 = O(1)
+
+BigO((n*4) + 2)
+
+
+
+
+
+
