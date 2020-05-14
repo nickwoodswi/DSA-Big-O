@@ -1,0 +1,12 @@
+function doubleArrayValues(array) {
+    for (let i = 0; i < array.length; i++) {
+        array[i] *= 2;
+    }
+    return array;
+}
+
+2 = O(n) -> for loop fires for every n
+3 = O(1) -> Value is singular, operation is performed once
+4 = O(1) -> Value is singular, operation is performed once
+
+BigO here is O(n*(O(1)) + 1).
