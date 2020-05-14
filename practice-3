@@ -1,0 +1,22 @@
+What is the Big O of the following algorithm? Explain your answer
+
+function areYouHere(arr1, arr2) {
+    for (let i = 0; i < arr1.length; i++) {
+        const el1 = arr1[i];
+        for (let j = 0; j < arr2.length; j++) {
+            const el2 = arr2[j];
+            if (el1 === el2) return true;
+        }
+    }
+    return false;
+}
+
+
+Line 4 is O(n). It performs a number of times equal to the length of arr1.
+Line 5 is O(1). It performs 1 time, every time its for loop fires.
+Line 6 is O(n). It performs a number of time equal to the length of arr2.
+Line 7 is O(1). It performs 1 time, every time its for loop fires.
+Line 8 is O(1). It performs 1 time, every time its for loop fires.
+
+The BigO complexity is O(n * (O(n * 2)) = O(n^2 * 2n)
+
