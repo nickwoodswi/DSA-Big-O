@@ -1,0 +1,11 @@
+function findRandomElement(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+}
+
+arr.length = O(1)
+Math.random = O(1)
+Math.random() * arr.length = O(1)
+Math.floor(Math.random() * arr.length) = O(1)
+return arr[Math.floor(Math.random() * arr.length)] = O(1)
+
+BigO = O(5)
