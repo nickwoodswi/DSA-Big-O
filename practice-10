@@ -1,0 +1,18 @@
+function isWhat(n) {
+    if (n < 2 || n % 1 !== 0) {
+        return false;
+    }
+    for (let i = 2; i < n; ++i) {
+        if (n % i === 0) return false;
+    }
+    return true;
+}
+
+This function validates whether a numeric input is even or not.
+
+2 = O(1) -> check n
+5 = O(n)
+  6 = O(2) -> n%i, return
+8 = O(8) -> return
+
+BigO = O(n)
