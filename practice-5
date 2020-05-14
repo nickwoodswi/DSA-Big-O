@@ -1,0 +1,13 @@
+function naiveSearch(array, item) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === item) {
+            return i;
+        }
+    }
+}
+
+2 = O(n) -> Operation is performed once for every n
+3 = O(1) -> Operation is performed once
+4 = O(1) -> Operation is performed once
+
+O(n * 2)
