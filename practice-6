@@ -1,0 +1,13 @@
+function createPairs(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        for(let j = i + 1; j < arr.length; j++) {
+            console.log(arr[i] + ", " +  arr[j] );
+        }
+    }
+}
+
+2 = O(n) -> Operation is performed once for every n in array
+3 = O(n - 1) -> Operation is performed once for every n in array, skipping the first each time
+4 = O(1) -> Operation is performed once, regardless of input value
+
+O(n^2 - n)
